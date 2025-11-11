@@ -2,7 +2,7 @@ import { Product } from "../models/product";
 
 export class ProductRepository {
     private products: Array<Product> = [];
-    constructor() { }
+    constructor() {}
 
     populate(products: Array<Product>): void {
         this.products = products;

@@ -23,13 +23,15 @@ describe('Product Repository', () => {
             expect(products).toEqual(expectedProducts);
             expect(products).toHaveLength(3);
 
-        })
-    })
+        });
+    });
+    
     describe('populate()', () => {
         it('should populate the repository with products', () => {
             //Arrange
             const p1 = new Product('produto1', 10.0);
             const p2 = new Product('produto2', 20.0);
+            
             const productsToPopulate = [p1, p2];
 
             //Act
