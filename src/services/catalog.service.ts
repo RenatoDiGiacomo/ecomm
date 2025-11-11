@@ -4,7 +4,7 @@ import { ProductRepository } from "../repositories/product.repo";
 export class CatalogService {
     private repo: ProductRepository;
 
-    constructor(repo?: ProductRepository) {
+    constructor( repo?: ProductRepository) {
         this.repo = repo || new ProductRepository();
     }
 
